@@ -4,11 +4,12 @@ import { HeaderComponent } from 'src/app/components/header/header.component';
 import { AnchorComponent } from 'src/app/components/anchor/anchor.component';
 import { DataServiceService } from 'src/app/services/data-service/data-service.service';
 import { TruncatePipe } from 'src/app/pipes/truncate/truncate.pipe';
+import { HighlightDirective } from 'src/app/directives/highlight.directive';
 
 @Component({
   selector: 'app-portfolio-home',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, AnchorComponent,TruncatePipe],
+  imports: [HeaderComponent, FooterComponent, AnchorComponent,TruncatePipe,HighlightDirective],
   templateUrl: './portfolio-home.component.html',
   styleUrls: ['./portfolio-home.component.css']
 })
