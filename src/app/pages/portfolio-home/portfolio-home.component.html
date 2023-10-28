@@ -1,6 +1,6 @@
 <app-header></app-header>
 <section class="body-section">
-    Body works here !!
+    <span (click)="changeName()">Body works here !!</span>
 
     My Social profiles are:
     <div>
@@ -9,6 +9,12 @@
     <div>
         <app-anchor [textVal]="'Twitter'" [hrefVal]="'https://twitter.com/abhishekkrdev'" [targetBlank]="true"></app-anchor>
     </div>
-
+    <div class="for-pipe">
+        <p><strong>Custom Pipe example</strong></p>
+        <div (click)="printPipe()">
+            {{ longText | truncate : 20 }}
+            
+        </div>
+    </div>
 </section>
 <app-footer></app-footer>

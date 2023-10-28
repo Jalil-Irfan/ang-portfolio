@@ -16,4 +16,11 @@ export class AnchorComponent {
   onInit() {
     console.log('AnchorComponent.onInit()');
   }
+
+  ngOnInit() {
+    console.log('Anchor .onInit()');
+  }
+  ngOnChanges() {
+    console.log('Anchor .onChanges()');
+  }
 }
